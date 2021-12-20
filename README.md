@@ -4,5 +4,5 @@ The following Dockerfile is the one used for building the custom Apache Spark fo
 The image can be pulled using the following command:
 
 ```
-docker pull platformedtasks/plas-spark:latest
+docker pull platformedtasks/spark:latest
 ```
