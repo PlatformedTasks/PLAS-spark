@@ -19,6 +19,7 @@ try:
     spark_command = sys.argv[1].split(" ")
     spark_command.insert(1, "--master")
     spark_command.insert(2, f"spark://{spark_ep}")
+    spark_command.append(sys.argv[2])
     print(f"####### COMMAND: {spark_command}")
     
     process = subprocess.run(spark_command)
